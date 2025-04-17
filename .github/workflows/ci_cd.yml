@@ -58,7 +58,7 @@ jobs:
           port: ${{ secrets.VPS_PORT }}
           script: |
             # Login to GitHub Container Registry
-            echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+            echo ${{ secrets.LOGIN_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
             # Pull the latest image
             docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
