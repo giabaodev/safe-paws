@@ -4,6 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-seashell: oklch(0.97 0.0086 84.57);
+  --color-arsenic: oklch(0.38 0.0266 166.03);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -118,5 +120,9 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  button,
+  [role='button'] {
+    cursor: pointer;
   }
 }
