@@ -16,7 +16,6 @@ export const SvgIcon = ({
   ...props
 }: SvgIconType) => {
   if (!children) return null;
-  console.log('children', children);
   return React.cloneElement(children, {
     width: size,
     height: size,

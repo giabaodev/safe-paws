@@ -1,5 +1,6 @@
-import { Footer } from '@/components/Footer';
-import { Header } from '@/components/Header';
+import { Footer } from '@/components/layouts/footer';
+import { Header } from '@/components/layouts/header';
+import { Flex } from '@/components/ui/flex';
 
 export default function HomeLayout({
   children,
@@ -7,10 +8,10 @@ export default function HomeLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="bg-seashell w-full flex flex-col h-full">
+    <Flex className="light:bg-seashell dark:bg-black w-full flex-col h-full">
       <Header />
       <main className="bg-transparent h-full">{children}</main>
       <Footer />
-    </div>
+    </Flex>
   );
 }

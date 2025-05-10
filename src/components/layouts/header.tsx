@@ -3,13 +3,14 @@ import { MenuNavList } from '@/configs';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '../ui/button';
-import { CartIcon } from '../Icons';
+import { CartIcon } from '../icons';
 import { PATH_NAMES } from '@/constants';
+import { Flex } from '../ui/flex';
 
 export const Header = () => {
   return (
     <div className="h-16 w-full">
-      <div className="flex justify-between items-center h-full px-[200px]">
+      <Flex className="justify-between items-center h-full px-[200px]">
         <Link href={PATH_NAMES.HOME}>
           <Image
             src={safePawsLogo}
@@ -21,13 +22,13 @@ export const Header = () => {
             }}
           />
         </Link>
-        <div className="flex gap-6">
+        <Flex className="gap-6">
           {MenuNavList.map((item) => (
             <Link key={item.label} href={item.path || '/'}>
               {item.label}
             </Link>
           ))}
-        </div>
+        </Flex>
         <Button variant="ghost">
           <CartIcon
             style={{
@@ -37,7 +38,7 @@ export const Header = () => {
           />
           Cart
         </Button>
-      </div>
+      </Flex>
     </div>
   );
 };

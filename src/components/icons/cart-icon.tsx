@@ -1,4 +1,4 @@
-import { SvgIcon, SvgIconProps } from './SvgIcon';
+import { SvgIcon, SvgIconProps } from './svg-icon';
 
 export const CartIcon = (props: SvgIconProps) => {
   return (

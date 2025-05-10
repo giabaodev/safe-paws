@@ -8,8 +8,7 @@ export default function HomePage() {
         src={dogHero}
         alt="Dog Hero"
         style={{
-          width: '100%',
-          height: '642px',
+          objectFit: 'cover',
         }}
       />
       <div className="absolute translate-y-1/2 rotate-90">
