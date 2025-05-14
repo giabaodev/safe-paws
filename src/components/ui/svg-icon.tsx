@@ -13,7 +13,6 @@ export const SvgIcon = ({
   children,
   ...props
 }: SvgIconType) => {
-  console.log('----------> color', color);
   if (!children) return null;
   return React.cloneElement(children, {
     width: size,
