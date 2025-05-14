@@ -8,13 +8,12 @@ export default function HomePage() {
         src={dogHero}
         alt="Dog Hero"
         style={{
-          width: '100%',
-          height: '642px',
+          aspectRatio: 1.8,
         }}
       />
-      <div className="absolute translate-y-1/2 rotate-90">
+      {/* <div className="absolute translate-y-1/2 rotate-90">
         <h5 className="text-white">Claim 10% Off</h5>
-      </div>
+      </div> */}
     </div>
   );
 }
