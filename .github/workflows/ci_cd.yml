@@ -44,7 +44,7 @@ jobs:
           script: |
             echo "${{ secrets.DOCKER_TOKEN }}" | docker login -u "${{ vars.DOCKER_USERNAME }}" --password-stdin
 
-            docker pull ${{ vars.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+            docker pull ${{ env.IMAGE_NAME }}:latest
 
             docker stop safe-paws || true
             docker rm safe-paws || true

@@ -7,7 +7,7 @@ import { Flex } from '../../ui/flex';
 export const Footer = () => {
   return (
     <div className="bg-arsenic mt-auto text-white">
-      <Flex className="py-24 gap-6 justify-center md:flex-row flex-col">
+      <Flex className="py-24 gap-6 justify-center md:flex-row flex-col items-center">
         <Image src={footerImg} alt="Footer Image" width={251} height={453} />
         <Flex className="flex-col justify-between">
           <Flex className="flex-col gap-6">
