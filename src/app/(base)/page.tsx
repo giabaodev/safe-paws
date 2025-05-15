@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import dogHero from '@/assets/images/dog_hero.png';
+import { BusinessKey } from './_components/business-key';
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       {/* <div className="absolute translate-y-1/2 rotate-90">
         <h5 className="text-white">Claim 10% Off</h5>
       </div> */}
+      <BusinessKey />
     </div>
   );
 }
