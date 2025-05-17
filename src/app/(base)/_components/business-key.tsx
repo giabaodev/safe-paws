@@ -4,6 +4,7 @@ import {
   UsefulDesignIcon,
 } from '@/components/icons';
 import { HealthyProductIcon } from '@/components/icons/healthy-product';
+import { SectionContent } from '@/components/layouts';
 import { Flex } from '@/components/ui/flex';
 import { SvgIconProps } from '@/components/ui/svg-icon';
 import { cn } from '@/lib/utils';
@@ -53,13 +54,13 @@ const BUSINESS_KEY_CONTENT: BusinessKeyContent[] = [
 
 export function BusinessKey() {
   return (
-    <Flex className="flex-col md:flex-row mx-auto justify-between items-center py-18 gap-6">
+    <SectionContent className="flex-col md:flex-row gap-6 py-[72px]">
       {BUSINESS_KEY_CONTENT.map((item, index) => (
         <Flex key={index} className="flex-col items-center gap-4 min-w-[182px]">
           <item.icon size={96} />
           {item.description}
         </Flex>
       ))}
-    </Flex>
+    </SectionContent>
   );
 }
