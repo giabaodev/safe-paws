@@ -46,7 +46,13 @@ export function AboutUs() {
             thriving communities.
           </p>
         </Flex>
-        <Image src={aboutUsDog} alt="About Us Pic" width={800} height={388} />
+        <Image
+          src={aboutUsDog}
+          alt="About Us Pic"
+          width={800}
+          height={388}
+          className="rounded-lg"
+        />
         <div className="w-full">
           <p className="font-bold text-subtitle text-center mb-6">Our Values</p>
           <div className="px-6 md:px-0">

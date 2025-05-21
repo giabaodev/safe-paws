@@ -1,5 +1,5 @@
 import { PATH_NAMES } from '@/constants';
-import { MenuNavItem } from '@/types/menu';
+import { MenuNavItem } from '@/types';
 
 export const MenuNavList: MenuNavItem[] = [
   {
