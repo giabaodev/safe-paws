@@ -2,7 +2,7 @@ import footerImg from '@/assets/images/footer_image.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { LogoIcon } from '../../icons/logo-icon';
-import { Flex } from '../../ui/flex';
+import { Flex } from '@/components/ui';
 
 export const Footer = () => {
   return (

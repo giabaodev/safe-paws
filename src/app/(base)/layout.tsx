@@ -1,5 +1,5 @@
 import { Footer, Header } from '@/components/layouts';
-import { Flex } from '@/components/ui/flex';
+import { Flex } from '@/components/ui';
 
 export default function HomeLayout({
   children,

@@ -45,6 +45,11 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --text-title-hero: 3.5rem;
+  --text-title-hero--line-height: 4rem;
+  --text-subtitle: 2rem;
+  --text-subtitle--line-height: 3rem;
+  --spacing-18: calc(var(--spacing) * 18);
 }
 
 :root {
