@@ -1,0 +1,16 @@
+/* styles.css */
+.AccordionShowIcon[data-state='open'] > svg {
+  transform: rotate(180deg);
+}
+
+.AccordionHiddenIcon[data-state='open'] > svg {
+  display: none;
+}
+
+.AccordionHiddenIcon[data-state='open'] > .ShowOpenIcon {
+  display: block;
+}
+
+.AccordionHiddenIcon[data-state='closed'] > .ShowOpenIcon {
+  display: none;
+}

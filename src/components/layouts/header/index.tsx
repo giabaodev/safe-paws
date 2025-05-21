@@ -4,11 +4,10 @@ import { MenuNavList } from '@/configs';
 import { PATH_NAMES } from '@/constants';
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
-import { Flex } from '@/components/ui/flex';
 import { CartIcon, LogoIcon } from '@/components/icons';
-import { Button } from '@/components/ui/button';
 import styles from './styles.module.css';
 import { cn } from '@/lib/utils';
+import { Button, Flex } from '@/components/ui';
 
 export const Header = () => {
   return (

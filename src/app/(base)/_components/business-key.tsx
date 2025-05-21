@@ -5,8 +5,7 @@ import {
 } from '@/components/icons';
 import { HealthyProductIcon } from '@/components/icons/healthy-product';
 import { SectionContent } from '@/components/layouts';
-import { Flex } from '@/components/ui/flex';
-import { SvgIconProps } from '@/components/ui/svg-icon';
+import { Flex, SvgIconProps } from '@/components/ui';
 import { cn } from '@/lib/utils';
 import { JSX, ReactElement } from 'react';
 
