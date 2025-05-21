@@ -1,4 +1,4 @@
-import { Flex } from '@/components/ui/flex';
+import { Flex } from '@/components/ui';
 import { cn } from '@/lib/utils';
 
 interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
