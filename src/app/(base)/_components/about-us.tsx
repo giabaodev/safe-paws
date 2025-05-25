@@ -9,6 +9,7 @@ import {
   AccordionTrigger,
   Flex,
 } from '@/components/ui';
+import { Text } from '@/components/ui/text';
 import { Minus, Plus } from 'lucide-react';
 import Image from 'next/image';
 
@@ -35,8 +36,8 @@ export function AboutUs() {
     <SectionContent className="py-24">
       <Flex className="max-w-[800px] flex-col gap-18">
         <Flex className="gap-6 items-center flex-col md:flex-row px-6 md:px-0">
-          <h1 className="font-medium text-title-hero">Who We Are?</h1>
-          <p className="text-base">
+          <Text variant="titlehero">Who We Are?</Text>
+          <Text variant="bodybase" className="text-arsenic">
             SafePaws is more than a pet brand, we’re a caring community
             committed to pet health and making a positive impact.
             <br />
@@ -44,7 +45,7 @@ export function AboutUs() {
             Our work is to use our business as a force for good, ensuring a
             sustainable future with healthy ecosystems, meaningful work, and
             thriving communities.
-          </p>
+          </Text>
         </Flex>
         <Image
           src={aboutUsDog}
@@ -71,7 +72,7 @@ export function AboutUs() {
                     {item.title}
                   </AccordionTrigger>
                   <AccordionContent className="px-6 py-3">
-                    <p className="text-base">{item.content}</p>
+                    <Text variant="bodybase">{item.content}</Text>
                   </AccordionContent>
                 </AccordionItem>
               ))}

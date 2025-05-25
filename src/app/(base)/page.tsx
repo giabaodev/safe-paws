@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import dogHero from '@/assets/images/dog_hero.png';
-import { BusinessKey } from './_components/business-key';
+import Image from 'next/image';
 import { AboutUs } from './_components/about-us';
+import { BusinessKey } from './_components/business-key';
 
 export default function HomePage() {
   return (
@@ -11,6 +11,7 @@ export default function HomePage() {
         alt="Dog Hero"
         style={{
           aspectRatio: 1.8,
+          width: '100%',
         }}
       />
       {/* <div className="absolute translate-y-1/2 rotate-90">
