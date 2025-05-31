@@ -2,6 +2,7 @@ import dogHero from '@/assets/images/dog_hero.png';
 import Image from 'next/image';
 import { AboutUs } from './_components/about-us';
 import { BusinessKey } from './_components/business-key';
+import { Community } from './_components/community';
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
       </div> */}
       <BusinessKey />
       <AboutUs />
+      <Community />
     </div>
   );
 }
