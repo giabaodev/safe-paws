@@ -7,16 +7,16 @@ import { Flex } from '@/components/ui';
 export const Footer = () => {
   return (
     <div className="bg-arsenic mt-auto text-white">
-      <Flex className="py-24 gap-6 justify-center md:flex-row flex-col items-center">
+      <Flex className="py-24 gap-6 justify-center md:flex-row flex-col items-center md:items-stretch">
         <Image src={footerImg} alt="Footer Image" width={251} height={453} />
-        <Flex className="flex-col justify-between">
+        <Flex className="flex-col justify-between gap-12">
           <Flex className="flex-col gap-6">
             <LogoIcon width={113} height={69} color="white" />
             <p>
               We are always here for <br /> {`all your pet's good health.`}
             </p>
           </Flex>
-          <Flex className="flex-col gap-3">
+          <Flex className="flex-col gap-6">
             <p>
               Follow us here:
               <br />
