@@ -8,8 +8,8 @@ import {
   AccordionItem,
   AccordionTrigger,
   Flex,
+  Text,
 } from '@/components/ui';
-import { Text } from '@/components/ui/text';
 import { Minus, Plus } from 'lucide-react';
 import Image from 'next/image';
 
