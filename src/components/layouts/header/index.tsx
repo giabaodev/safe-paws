@@ -16,7 +16,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from '@/components/ui/drawer';
+} from '@/components/ui';
 
 export const Header = () => {
   return (
