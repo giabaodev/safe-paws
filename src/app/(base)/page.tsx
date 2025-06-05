@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { AboutUs } from './_components/about-us';
 import { BusinessKey } from './_components/business-key';
 import { Community } from './_components/community';
+import { AllProduct } from './_components/all-product';
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
         <h5 className="text-white">Claim 10% Off</h5>
       </div> */}
       <BusinessKey />
+      <AllProduct />
       <AboutUs />
       <Community />
     </div>

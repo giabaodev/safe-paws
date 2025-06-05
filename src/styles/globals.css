@@ -11,6 +11,7 @@
   --color-deepgreen: oklch(0.5756 0.1064 172.21);
   --color-lightsilver: oklch(0.8858 0.0035 174.47);
   --color-fireopal: oklch(0.6595 0.1843 32.3);
+  --color-sonic-silver: oklch(0.5786 0.0012 197.12);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
