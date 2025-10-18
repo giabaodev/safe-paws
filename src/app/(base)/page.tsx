@@ -1,14 +1,15 @@
 import dogHero from '@/assets/images/dog_hero.png';
 import Image from 'next/image';
 import { AboutUs } from './_components/about-us';
+import { AllProduct } from './_components/all-product';
 import { BusinessKey } from './_components/business-key';
 import { Community } from './_components/community';
-import { AllProduct } from './_components/all-product';
 
 export default function HomePage() {
   return (
     <div className="relative flex flex-col">
       <Image
+        id="hero-image"
         src={dogHero}
         alt="Dog Hero"
         style={{

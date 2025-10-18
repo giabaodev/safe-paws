@@ -7,7 +7,7 @@ export default function HomeLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Flex className="light:bg-seashell dark:bg-black w-full flex-col h-screen">
+    <Flex className="w-full flex-col h-screen">
       <Header />
       <main className="bg-transparent">{children}</main>
       <Footer />

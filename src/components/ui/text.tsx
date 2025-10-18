@@ -10,6 +10,7 @@ const textVariants = cva('text-eerieblack', {
       bodysmall: 'font-light text-sm',
       bodybase: 'font-light text-base',
       bodystrong: 'font-medium text-base',
+      'description-base': 'font-light text-xs',
     },
   },
   defaultVariants: {
@@ -28,6 +29,7 @@ const defaultVariants: DefaultVariantsKey = {
   bodysmall: 'h6',
   bodybase: 'h4',
   bodystrong: 'h5',
+  'description-base': 'p',
 };
 
 export interface TextProps

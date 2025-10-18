@@ -1,23 +1,27 @@
-import Image, { StaticImageData } from 'next/image';
-import { Button, Flex, Text } from '../ui';
+import { ProductCartItem } from '@/types';
+import Image from 'next/image';
 import { useState } from 'react';
-
-export interface ProductCartItem {
-  id: string;
-  image?: string | StaticImageData;
-  productName: string;
-  productOptions: string[];
-  productCategory: string;
-  price: string | number;
-}
+import { Button, Flex, Text } from '../ui';
+import { useCartStore } from '@/stores';
 
 interface ProductCardProps {
   item: ProductCartItem;
 }
 
 export function ProductCard({ item }: ProductCardProps) {
+  const { addItem, setOpen } = useCartStore();
   const { image, productName, productCategory, productOptions, price } = item;
   const [currentOption, setCurrentOption] = useState<string>(productOptions[0]);
+
+  const handleAddToCart = () => {
+    addItem({
+      ...item,
+      selectedOption: currentOption,
+      quantity: 1,
+    });
+    return setOpen(true);
+  };
+
   return (
     <Flex className="flex-col gap-3">
       <Image
@@ -60,7 +64,10 @@ export function ProductCard({ item }: ProductCardProps) {
         </span>
       </Flex>
       <div className="text-center">
-        <Button className="rounded-full block mx-auto bg-deepgreen hover:bg-deepgreen/80">
+        <Button
+          className="rounded-full block mx-auto bg-deepgreen hover:bg-deepgreen/80"
+          onClick={handleAddToCart}
+        >
           Add to Cart
         </Button>
         <Button variant="link" className="text-sm font-light text-sonic-silver">

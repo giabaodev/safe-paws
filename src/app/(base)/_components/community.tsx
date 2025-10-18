@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export const Community = () => {
   return (
-    <SectionContent className="py-24">
+    <SectionContent id="community" className="py-24">
       <Flex className="flex-col gap-18 px-6 md:px-0">
         <div className="mx-auto">
           <Text variant="subtitle">Meet Our Community!</Text>
