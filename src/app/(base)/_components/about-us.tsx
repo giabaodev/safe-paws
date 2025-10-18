@@ -33,7 +33,7 @@ const ourValuesContent = [
 
 export function AboutUs() {
   return (
-    <SectionContent className="py-24">
+    <SectionContent id="about-us" className="py-24">
       <Flex className="max-w-[800px] flex-col gap-18">
         <Flex className="gap-6 items-center flex-col md:flex-row px-6 md:px-0">
           <Text variant="titlehero">Who We Are?</Text>

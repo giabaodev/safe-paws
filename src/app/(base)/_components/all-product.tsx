@@ -1,14 +1,12 @@
 'use client';
 
+import productImage from '@/assets/images/product_example.png'; // Assuming you have a product image
 import { SectionContent } from '@/components/layouts';
-import {
-  ProductCard,
-  ProductCartItem,
-} from '@/components/molecules/product-card';
+import { ProductCard } from '@/components/molecules/product-card';
 import { Button, Flex, Text } from '@/components/ui';
 import { cn } from '@/lib/utils';
+import { ProductCartItem } from '@/types';
 import { useState } from 'react';
-import productImage from '@/assets/images/product_example.png'; // Assuming you have a product image
 
 interface Category {
   title: string;
@@ -117,8 +115,9 @@ export const AllProduct = () => {
   const [currentCategory, setCurrentCategory] = useState<string>(
     category[0].value,
   );
+
   return (
-    <SectionContent className="py-24 flex-col">
+    <SectionContent id="all-product" className="py-24 flex-col">
       <Text variant="subtitle" className="mb-6 px-6 md:px-0">
         Essential Care for Every Paw
       </Text>
@@ -147,7 +146,7 @@ export const AllProduct = () => {
           </Button>
         ))}
       </Flex>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-16 px-6 md:px-0">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-16 px-6 md:px-0">
         {productData.map((item) => (
           <ProductCard key={item.id} item={item} />
         ))}
